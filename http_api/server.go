@@ -1,5 +1,7 @@
 //Server: ROle is to open the socket and serve the handler
 //HTTP server
+package http_api
+
 type Server struct{
 	ln net.Listener
 
@@ -25,4 +27,17 @@ func (s *Server) Open() error{
 		return err
 	}
 	s.ln = ln
+}
+
+//Start HTTP server
+go func() {http.Serve(s.ln, s.Handler)}()
+
+return nil
+
+//Close xloses the socjet
+func (s *Server) Close() error{
+	if s.ln != nil{
+		s.ln.Close()
+	}
+	return nil
 }
