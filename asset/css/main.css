@@ -1,0 +1,22 @@
+
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+body {
+    font-size: 0.8em;
+}
+
+header, nav, article, footer, div.city, div.country {
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 8px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
