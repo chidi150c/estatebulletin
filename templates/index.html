@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Estate Bulletin</title>
-    <meta charset="utf-8">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-    </script>
-    <![endif]-->
-    <link rel="stylesheet"  href="/asset/css/main.css">
-</head>
-    <body>
-        <header>
-            <h1>HTML5 Skeleton</h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li>News</li>
-                <li>Sports</li>
-                <li>Weather</li>
-            </ul>
-        </nav>
-
+{{define "body"}}
+<section class="display-flex">
+        <aside>
+        </aside>
         <article>
 
             <section>
@@ -65,10 +45,7 @@
             </section>
 
         </article>
-
-        <footer>
-            <p>&copy; 2014 W3Schools. All rights reserved.</p>
-        </footer>
-
-    </body>
-</html>
+        <aside>
+        </aside>
+</section>
+{{end}}

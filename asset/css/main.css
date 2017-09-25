@@ -1,22 +1,11 @@
+/* Add a black background color to the top navigation */
+.navbar{background-color:#333;width:100%;overflow:hidden}
 
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+/* Style the links inside the navigation bar */
+a {float: left;display: block;color: #f2f2f2;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;}
 
-body {
-    font-size: 0.8em;
-}
+/* Change the color of links on hover */
+a:hover {background-color:#ddd;color: black;}
 
-header, nav, article, footer, div.city, div.country {
-    border: 1px solid grey;
-    margin: 5px;
-    padding: 8px;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 5px;
-}
+/* Add a color to the active/current link */
+a.active {background-color:#4CAF50;color: white;}

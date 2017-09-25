@@ -1,96 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Estate Bulletin</title>
+ <!-- Google Tag Manager -->
+ <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-    </script>
-    <![endif]-->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bitcoin.com Pool</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/asset/font-awesome/fonts/fontawesome-webfont.woff2" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    <!-- W3CSS -->
+    <link rel="stylesheet"  href="/asset/w3css/w3-theme-blue-grey.css">
+    <link rel="stylesheet"  href="/asset/w3css/w3.css"> 
+    <!-- Theme CSS -->
     <link rel="stylesheet"  href="/asset/css/main.css">
+    <link rel="stylesheet"  href="/asset/css/mystyle.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 </head>
-    <body>
-        <header>
-            <h1>Estate Bulletin</h1>
-        </header>
+<body>
 
-        <nav>
-            <!-- Navbar -->
-<div class="w3-top">
-        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-         <div class="w3-dropdown-hover w3-hide-small">
-           <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-           <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-             <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-             <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-             <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-           </div>
-         </div>
-         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="/w3images/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
-        </div>
-       </div>
-            <ul>
-                <li>News</li>
-                <li>Sports</li>
-                <li>Weather</li>
-            </ul>
+    <!-- Navbar -->
+        <nav class="navbar" id="myTopnav">
+            <a href="#home"><i class="fa fa-home"></i> Home</a>
+            <a href="#news"><i class="fa fa-globe"></i> News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#search"><i class="fa fa-search"></i> Search</a> 
+            <a href="#message" title="Messages"><i class="fa fa-envelope"></i></a>
         </nav>
+    {{template "body" .Data}}
 
-        <article>
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+    (function(){ var widget_id = '1OUYUnsFc1';var d=document;var w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
 
-            <section>
-                <h2>Famous Cities</h2>
-                <div class="city">
-                    <h2>London</h2>
-                    <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
-                </div>
+    <footer>
+        <p>&copy 2017 Resoledge Limited. All rights reserved.</p>
+    </footer>
 
-                <div class="city">
-                    <h2>Paris</h2>
-                    <p>Paris is the capital and most populous city of France.</p>
-                </div>
-
-                <div class="city">
-                    <h2>Tokyo</h2>
-                    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-                    and the most populous metropolitan area in the world.</p>
-                </div>
-            </section>
-
-            <section>
-                <h2>Famous Countries</h2>
-                <div class="country">
-                    <h2>England</h2>
-                    <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-                    with a metropolitan area of over 13 million inhabitants.</p>
-                </div>
-
-                <div class="country">
-                    <h2>France</h2>
-                    <p>Paris is the capital and most populous city of France.</p>
-                </div>
-
-                <div class="country">
-                    <h2>Japan</h2>
-                    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-                    and the most populous metropolitan area in the world.</p>
-                </div>
-            </section>
-
-        </article>
-
-        <footer>
-            <p>&copy; 2014 W3Schools. All rights reserved.</p>
-        </footer>
-
-    </body>
+</body>
 </html>
