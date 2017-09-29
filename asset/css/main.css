@@ -1,11 +1,30 @@
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif !important;}
 /* Add a black background color to the top navigation */
-.navbar{background-color:#333;width:100%;overflow:hidden}
-
+.navbar{color: #fff;background-color:#333;width:100%;overflow:hidden;}
 /* Style the links inside the navigation bar */
 a {float: left;display: block;color: #f2f2f2;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;}
-
 /* Change the color of links on hover */
 a:hover {background-color:#ddd;color: black;}
-
 /* Add a color to the active/current link */
 a.active {background-color:#4CAF50;color: white;}
+/* Card  */
+/* #Demo {width: 25%;position:fixed;right:20px;bottom:50px;} */
+#cardbutton{display: block;}
+/* Chat CSS */
+#cardbox {border-radius:15px;position:fixed;right:20px;bottom:20px;margin:0;padding:0;background: rgba(29, 220, 237, 0);}
+.chatbox {display:block;width: 320px;height: 362px;background: rgb(255, 255, 255);padding: 20px 2px 20px 10px;margin: 5px 30px 5px 0px;box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);border-radius: 15px;}
+.chatlogs{padding: 2px;width: 100%;height: 290px;overflow-x: hidden;overflow-y: scroll;}
+.chatlogs::-webkit-scrollbar{width: 10px}
+.chatlogs::-webkit-scrollbar-thumb{border-radius: 5px; background: rgba(0,0,0,0.1);}
+.chat {display: flex;flex-flow: row wrap;align-items: flex-start;margin-bottom: 2px;}
+.chat .user-photo {width: 53px;height: 53px;background: #ccc;border-radius: 50%;margin: 5px 0;}
+.chat .chat-message {width: 78%;padding: 15px;margin: 5px 5px 0;background: #1ddced;border-radius: 10px;color: #fff;font-size: 18px;}
+.friend .chat-message{background: #1adda4;}
+.self .chat-message{background: #1ddced;order: -1;}
+.chat-form{margin: 1px;display: flex;align-items: flex-start;}
+.chat-form textarea{background: #fbfbfb;width: 83%;height: 43px;border: 2px solid #eee;border-radius: 5px;resize: none;padding: 10px;font-size: 18px;color: #333;margin: 5px 0;}
+.chat-form textarea:focus{background: #fff;}
+.chat-form textarea::-webkit-scrollbar{width: 10px;}
+.chat-form textarea::-webkit-scrollbar-thumb{border-radius: 5px; background: rgba(0,0,0,0.1);}
+.chat-form button {background: #1ddced;padding: 5px 15px;font-size: 15px;color: #fff;border: none;margin: 5px 10px 5px 2px;border-radius: 9px;box-shadow: 0 3px 0 #0eb2c1;cursor: pointer;-webkit-transition: .2s ease;-moz-transition: .2 ease;}
+.chat-form button:hover {background: #13c8d9;}

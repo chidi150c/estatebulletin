@@ -19,10 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
     <!-- W3CSS -->
     <link rel="stylesheet"  href="/asset/w3css/w3-theme-blue-grey.css">
-    <link rel="stylesheet"  href="/asset/w3css/w3.css"> 
+    <link rel="stylesheet"  href="/asset/css/w3.css"> 
     <!-- Theme CSS -->
     <link rel="stylesheet"  href="/asset/css/main.css">
     <link rel="stylesheet"  href="/asset/css/mystyle.css">
+    <script src="/asset/js/main.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,24 +32,21 @@
     <![endif]-->
   
 </head>
-<body>
+<body class="w3-display-container">
 
     <!-- Navbar -->
-        <nav class="navbar" id="myTopnav">
-            <a href="#home"><i class="fa fa-home"></i> Home</a>
-            <a href="#news"><i class="fa fa-globe"></i> News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="#search"><i class="fa fa-search"></i> Search</a> 
-            <a href="#message" title="Messages"><i class="fa fa-envelope"></i></a>
-        </nav>
-    {{template "body" .Data}}
-
-    <!-- BEGIN JIVOSITE CODE {literal} -->
-    <script type='text/javascript'>
-    (function(){ var widget_id = '1OUYUnsFc1';var d=document;var w=window;function l(){
-    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-    <!-- {/literal} END JIVOSITE CODE -->
+    <nav class="navbar" id="myTopnav">
+        <a href="#home"><i class="fa fa-home"></i> Home</a>
+        <a href="#news"><i class="fa fa-globe"></i> News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#search"><i class="fa fa-search"></i> Search</a> 
+        <a href="#message" title="Messages"><i class="fa fa-envelope"></i></a>
+    </nav>
+    {{template "body" }}
+    <section id="cardbox" class="w3-display-bottomright">
+        {{template "chat" .Chat}}
+    </section>
 
     <footer>
         <p>&copy 2017 Resoledge Limited. All rights reserved.</p>

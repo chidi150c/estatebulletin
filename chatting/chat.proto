@@ -1,0 +1,26 @@
+syntax="proto3";
+
+package chatting;
+
+enum Sentiment{
+    HAPPY = 0;
+    INDEFFERENT = 1;
+    ANGRY = 2;
+}
+
+message MessageFromClient {
+    string Name = 1;
+    string Message = 2;
+    string Email = 3;
+    map<string, string> MoreInfo = 4;
+    Sentiment Feel = 5;
+}
+
+message MessageFromServer {
+    string Name = 1;
+    string Message = 2;
+}
+
+service ChatService{
+    rpc Chat(stream MessageFromClient) returns (stream MessageFromServer){}
+}

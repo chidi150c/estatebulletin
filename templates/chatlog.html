@@ -1,0 +1,14 @@
+{{define "message"}}
+    {{if .Fmessage}}
+    <div class="chat friend">
+        <div><img class="user-photo" src="/asset/images/maturewoman.png"></div>
+        <p class="chat-message">{{.Fmessage}}</p>
+    </div>
+    {{end}}
+    {{if .Smessage}}
+    <div class="chat self">
+        <div><img class="user-photo" src="/asset/images/man.png"></div>
+        <p class="chat-message">{{.Smessage}}</p>
+    </div>
+    {{end}}
+{{end}}

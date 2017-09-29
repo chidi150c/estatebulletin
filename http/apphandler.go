@@ -23,6 +23,7 @@ func NewAppHandler() *AppHandler {
 		Logger: log.New(os.Stderr, "", log.LstdFlags),
 	}
 	h.mux.Get("/app/0", h.indexHandler)
+	h.mux.Post("/app/0", h.indexHandler)
 	h.mux.Get("/app/1", h.socialHandler)
 	// h.mux.Get("/app/3", h.apartmentHandler)
 	// h.mux.Get("/app/4", h.hotelHandler)
@@ -30,8 +31,26 @@ func NewAppHandler() *AppHandler {
 	return h
 }
 
+type Msge struct {
+	Fmessage string
+	Smessage string
+}
+
 func (a *AppHandler) indexHandler(w http.ResponseWriter, r *http.Request) {
-	if err := indexTmpl.t.Execute(w, nil); err != nil {
+
+	ddd := r.FormValue("message")
+	m := Msge{
+		Fmessage: "What's up Sister",
+		Smessage: ddd,
+	}
+
+	d := struct {
+		//Data
+		Chat Msge
+	}{
+		Chat: m,
+	}
+	if err := indexTmpl.t.Execute(w, d); err != nil {
 		log.Fatal(err)
 	}
 }

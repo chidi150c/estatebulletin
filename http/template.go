@@ -10,7 +10,6 @@ import (
 
 var (
 	indexTmpl = newAppTemplate("index.html")
-	//SignupTmpl    = newAppTemplate("signup.html")
 	//IndexTmpl     = newAppTemplate("index.html")
 	//LoginTmpl     = newAppTemplate("login.html")
 	//ListusersTmpl = newAppTemplate("listusers.html")
@@ -25,9 +24,13 @@ type appTemplate struct {
 // parseTemplate applies a given file to the body of the base template.
 func newAppTemplate(filename string) *appTemplate {
 	path := strings.Join([]string{"templates", filename}, "/")
-	tmpl := template.Must(template.ParseFiles("templates/base.html", path))
+	tmpl := template.Must(template.ParseFiles("templates/base.html", path, "templates/chat.html", "templates/chatlog.html"))
 	return &appTemplate{t: tmpl}
 }
+
+// func (tmpl *appTemplate) ParseChatTemplate(filename string) (*Template, error) {
+// 	func (t *Template) ParseFiles(filenames ...string) (*Template, error)
+// }
 
 // Execute writes the template using the provided data, adding login and user
 // information to the base template...   usr interface{}, noFooter bool
